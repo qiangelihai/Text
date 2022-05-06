@@ -294,6 +294,8 @@ namespace demoSys.Controllers
                 case 4:
                     appointment.opt4_name = null;
                     break;
+                default:
+                    return null;
             }
             int result = db.SaveChanges();
             if (result > 0)
